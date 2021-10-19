@@ -1,39 +1,43 @@
 body{
-    background: cornflowerblue;
-    font: normal 15pt Arial;
+    background: rgba(166, 237, 238, 1);
+    font-family: Roboto , sans-serif;
+    background-image: url(/images/derretendo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header{
-    color: white;
-    text-align: center;
-}
-
-section{
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
-}
-
-footer{
-    color: white;
-    text-align: center;
-    font-style: italic;
-}
-
-#menu ul {
     color: black;
-    padding:10px;
-    margin:0px;
-    background-color:#EDEDED;
-    list-style:none;
+    text-align: center;
 }
-#menu ul li { display: inline; }
+header h1{
+    font-family: 'aclonica';
+    text-align: left;
+    color: rgba(243, 70, 152, 1);
+    float: left;
+    font-size: 70px ;
+    margin-left: 35px;
+    margin-top:20px;
+}
+ul{
+   list-style:none;
+   display: inline-block;
+   vertical-align: top;
+   text-align: right;
+   margin-top: 25px;
+   float: right;
+   margin-right: 40px;
 
-#menu ul li a:hover {
-    background-color:#D6D6D6;
-    color: #6D6D6D;
-    border-bottom:3px solid #EA0000;
 }
+li{
+    display: inline;
+}
+#menu a{
+    color: black;
+    text-decoration:none;
+    font-weight: bold;
+    padding:5px;
+    margin: 5px;
+    font-size:25px;
+}
+
