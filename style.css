@@ -10,34 +10,33 @@ header{
     color: black;
     text-align: center;
 }
-header h1{
+#titulo{
     font-family: 'aclonica';
     text-align: left;
     color: rgba(243, 70, 152, 1);
     float: left;
-    font-size: 70px ;
-    margin-left: 35px;
-    margin-top:20px;
+    font-size: 2em ;
+    /*margin-left: 35px;*/
+    margin-top:10px;
 }
-ul{
+/*ul{
    list-style:none;
    display: inline-block;
    vertical-align: top;
    text-align: right;
    margin-top: 25px;
    float: right;
-   margin-right: 40px;
+   margin-right: 40px;*/
 
 }
 li{
     display: inline;
 }
 #menu a{
-    color: black;
+    color: gray;
     text-decoration:none;
-    font-weight: bold;
     padding:5px;
-    margin: 5px;
-    font-size:25px;
+    /*margin: 5px;
+    font-size:25px;*/
 }
 
