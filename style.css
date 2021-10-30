@@ -1,8 +1,7 @@
 body{
     background: rgba(166, 237, 238, 1);
     font-family: Roboto , sans-serif;
-    background-image: url(/images/derretendo.png);
-    background-repeat: no-repeat;
+    background-image: url(images/derretendo.dvg) no-repeat;
     background-size: cover;
 }
 
