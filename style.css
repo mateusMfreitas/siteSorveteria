@@ -35,7 +35,6 @@ header{
    float: right;
    margin-right: 40px;*/
 
-}
 li{
     display: inline;
 }
@@ -49,4 +48,11 @@ li{
 
 #itens-contato{
     float: right;
+}
+
+#quem-somos{
+    text-align: center;
+    padding: 20px;
+    background-color:rgba(252, 230, 240, 1);
+    margin-left: 20px;
 }
