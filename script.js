@@ -1,11 +1,10 @@
 document.getElementById("btnConfirmar").onclick=function(){
     let frmChk=document.getElementById('frmCheckbox').elements;
-    let resultado='';
 
-    for(i =0;i<frm.Chk.length;i++){
+    for(i =0;i<frmChk.length;i++){
         if(frmChk[i].checked){
-            resultado = resultado+frmChk[i].value+" ";
+            console.log(frmChk[i])
         }
-        console.log(resultado)
     }
+    return false
 }
