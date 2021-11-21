@@ -107,7 +107,30 @@
             <img src="images/sorvete1.jpeg" alt="Sorvete 1">
             <div class="sorvetes-info">
                 <ul>
-                    <li><a class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a></li>
+                    <li data-dropdown>
+                        <a class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <form>
+                                    <div>
+                                      <input type = "checkbox" id = "checkbox" name = "subscribe" value = "newsletter">
+                                      <label for = "subscribeNews"> Morango - R$20,00 </label>
+                                    </div>
+                                    <div>
+                                        <input type = "checkbox" id = "checkbox" name = "subscribe" value = "newsletter">
+                                        <label for = "subscribeNews"> Chocolate - R$20,00 </label>
+                                    </div>
+                                    <div>
+                                        <input type = "checkbox" id = "checkbox" name = "subscribe" value = "newsletter">
+                                        <label for = "subscribeNews"> Creme - R$20,00 </label>
+                                    </div>
+                                    <div>
+                                      <button type = "submit"> Confirmar </button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
                     <li data-dropdown>
                         <a class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
                         <ul class="dropdown-menu">

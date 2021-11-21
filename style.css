@@ -139,7 +139,7 @@ li{
     padding: 5px;
     background-color: #16DEE1;
     border: 2px solid black;
-    border-radius: 20px;16DEE1
+    border-radius: 20px;
 }
 
 #quem-somos{
@@ -200,3 +200,11 @@ li{
     color: #FFFFFF;
 }
 
+.dropdown-menu label{
+    font-size: 0.8em;
+}
+
+.dropdown-menu button{
+    background-color: #F34698;
+   border-radius: 5px;
+}
