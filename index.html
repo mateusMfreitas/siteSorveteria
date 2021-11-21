@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
     <title>Sorvesonhos</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -45,20 +46,46 @@
         <h1>Pote</h1>
         <img src="images/1sorvete.png" alt="Pote">
         <br>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+        <ul>
+            <li data-dropdown><button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <p>Temos opções <b>tradicionais</b> que são: Morango, Chocolate e Creme. E opções ...</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
     </div>
+    
     <div class="tipo-picole">
         <h1>Picolé</h1>
         <img src="images/picolé.png" alt="Picolé">
         <br>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+        <ul>
+            <li data-dropdown><button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <p>Temos opções <b>tradicionais</b> que são: Morango, Chocolate e Creme. E opções ...</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
     <div class="tipo-zero">
         <h1>Zero</h1>
         <h2>Lactose</h2>
         <img src="images/2sorvetes.png" alt="Zero Lactose">
         <br>
-        <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+        <ul>
+            <li data-dropdown><button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <p>Temos opções <b>tradicionais</b> que são: Morango, Chocolate e Creme. E opções ...</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
 </section>
@@ -68,9 +95,6 @@
 
 <section id="produtos">
     <div class="titulos">Nossos Sorvetes</div>
-    <!--<svg class="bd-placeholder-img card-img-top" width="50%" height="40" aria-label="Nossos Sorvetes">
-        <title>Nossos Sorvetes</title><rect width="100%" height="100%" fill="#F4C3DA"/>
-    </svg>-->
     <br>
     <div class="modelos-sorvetes">
         <h5>Pote</h5>
@@ -82,16 +106,39 @@
         <div>
             <img src="images/sorvete1.jpeg" alt="Sorvete 1">
             <div class="sorvetes-info">
-                <a href="#" class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a>
-                <a href="#" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+                <ul>
+                    <li><a class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a></li>
+                    <li data-dropdown>
+                        <a class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h4>Pote Tradicional</h4>
+                                <p>Opções: Morango, Chocolate e Creme.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                
             </div>
         </div>
-
+<!--
         <div>
             <img src="images/sorvete2.jpeg" alt="Sorvete 2">
             <div class="sorvetes-info">
-                <a href="#" class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a>
-                <a href="#" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+                <ul>
+                    <li><a href="" class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a></li>
+                    <li data-dropdown>
+                        <a href="" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h4>Picolé Tradicional</h4>
+                                <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
             </div>
         </div>
 
@@ -130,7 +177,7 @@
     </div>
 </section>
 
-
+-->
 
 
 <br><br><br>
