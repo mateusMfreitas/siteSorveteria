@@ -1,3 +1,4 @@
+
 document.getElementById("btnConfirmar").onclick=function(){
     let frmChk=document.getElementById('frmCheckbox').elements;
     let sabor
@@ -24,10 +25,13 @@ function adicionarCarrinho(produto,valor){
     localStorage.setItem("valor", valor)
     mostrarCarrinho()
 
+
 }
 function mostrarCarrinho(){
-   // document.write(localStorage.getItem("produto"))
-    document.getElementById("textoCarrinho").innerHTML="sabor: "+ localStorage.getItem("produto")
-
+    for(var i in localStorage) {
+       // console.log(i + ' = ' + localStorage[i]);
+        document.getElementById("textoCarrinho").innerHTML+=localStorage.getItem("produto")
+        console.log(localStorage.key(0))
+    }
 }
 
