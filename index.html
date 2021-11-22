@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    
+   <!-- Barra de Navegação responsiva com botão para display pequeno --> 
 <header>
     <section>
     <nav class="navbar navbar-expand-sm navbar-light bg-faded fixed-top" style="background-color: #F4C3DA">
@@ -38,8 +38,19 @@
     </section>
 </header>
 
-
 <br><br><br><br><br><br>
+
+
+<!-- WhatsApp flutuante -->
+
+
+<a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5515981426482" target="_blank" onclick="alertar()">
+    <img src="images/whatsapp-logo.png" alt="WhatsApp">
+</a>
+
+
+
+<!-- Tipos de pote disponíveis na sorveteria -->
 
 <section class="tipos">
     <div class="tipo-pote">
@@ -93,6 +104,9 @@
 
 <br><br>
 
+
+<!-- Todos os produtos disponíveis e seus respectivos sabores -->
+
 <section id="produtos">
     <div class="titulos">Nossos Sorvetes</div>
     <br>
@@ -103,12 +117,96 @@
     </div>
     
     <div class="sorvetes">
+        <!-- Opções tradicionais -->
         <div>
             <img src="images/sorvete1.jpeg" alt="Sorvete 1">
+            <div data-dropdown>
+                <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                           <h4>Pote Tradicional</h4>
+                           <p>Opções: Morango, Chocolate e Creme.</p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <div>
+            <img src="images/sorvete2.jpeg" alt="Sorvete 2">
+            <div data-dropdown>
+                <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <h4>Picolé Tradicional</h4>
+                            <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        
+        <div>
+            <img src="images/sorvete3.jpeg" alt="Sorvete 3">
+            <div data-dropdown>
+                <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <h4>Picolé Tradicional</h4>
+                            <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <!-- Opções diferentes -->
+
+        <div>
+            <img src="images/sorvete4.jpeg" alt="Sorvete 4">
+            <div data-dropdown>
+                <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <h4>Picolé Tradicional</h4>
+                            <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <div>
+            <img src="images/sorvete5.jpeg" alt="Sorvete 5">
+            <div data-dropdown>
+                <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <h4>Picolé Tradicional</h4>
+                            <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <div>
+            <img src="images/sorvete5.jpeg" alt="Sorvete 5">
+            <div data-dropdown>
+                <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <h4>Picolé Tradicional</h4>
+                            <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+            
+    </div>
+
+
+            <!--
             <div class="sorvetes-info">
-                <ul>
-                    <li data-dropdown>
-                        <a class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a>
+                <ul>-->
+                     <!--<li data-dropdown>
+                       <a class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <form>
@@ -130,21 +228,25 @@
                                 </form>
                             </li>
                         </ul>
-                    </li>
-                    <li data-dropdown>
-                        <a class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+                    </li>-->
+                    <!--<span>
+                        <li data-dropdown>
+                        <!--<a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>-->
+                        <!--<button class="interrogacao" type = "submit"> <img src="images/ponto-de-interrogacao.png" alt="Interrogação"> </button>
+
                         <ul class="dropdown-menu">
                             <li>
                                 <h4>Pote Tradicional</h4>
                                 <p>Opções: Morango, Chocolate e Creme.</p>
                             </li>
                         </ul>
-                    </li>
-                </ul>
+                        </li>
+                    </span>
+                    
+                </ul>-->
                 
                 
-            </div>
-        </div>
+            
 <!--
         <div>
             <img src="images/sorvete2.jpeg" alt="Sorvete 2">
@@ -205,11 +307,20 @@
 
 <br><br><br>
 
-<section>
+
+<!-- Aba de quem somos com informações sobre a empresa -->
+
+<section id="quemsomos">
     <div class="titulos">Quem Somos</div>
     <br><br><br>
-    <p class= "col-md-10" id="quem-somos" >A SorveSonhos nasceu em 2010, na cidade de Sorocaba-SP. A venda de sorvetes começou através de carrinhos que passavam nas ruas, fazendo a alegria dos moradores com picolés de diversos sabores. Atualmente, é possível encontrar diversos produtos em nossas sorveterias. Venha conferir!</p>
-
+    <div class="quem-somos-itens">
+        <div class="col-sm-6" id="quem-somos-text">
+        <p>A SorveSonhos nasceu em 2010, na cidade de Sorocaba-SP. A venda de sorvetes começou através de carrinhos que passavam nas ruas, fazendo a alegria dos moradores com picolés de diversos sabores. Atualmente, é possível encontrar diversos produtos em nossas sorveterias. Venha conferir!</p>
+        </div>
+        <div class="quem-somos-img">
+            <img src="images/sorvesonhos-video.gif">
+        </div>
+    </div>
     <br><br><br>
 
     <svg class="bd-placeholder-img card-img-top" width="100%" height="40" aria-label="Quem Somos">
@@ -219,6 +330,9 @@
 </section>
 
 <br><br>
+
+
+<!-- Aba de contato para informar todos os tipos de contato disponíveis -->
 
 <section id="contato">
     <div class="titulos">Contato</div>
@@ -243,6 +357,37 @@
     </div>
     </div>
 </section>
+
+<br><br>
+<svg class="bd-placeholder-img card-img-top" width="100%" height="40" aria-label="Contato">
+    <title>Contato</title><rect width="100%" height="100%" fill="#F4C3DA"/>
+</svg>
+<br><br><br>
+
+<section id="carrinho">
+    <div class="titulos">Opções de pagamento</div>
+    <br><br>
+    <div class="pagamento">
+        <div class="pag-img">
+            <img src="images/nuvem.png" alt="Nuvem">
+        </div>
+        <div class="text-area">
+                Dinheiro<br>
+                Cartão<br>
+                Pix - chave (1533333333)
+        </div>
+        <div class="pag-img">
+            <img src="images/ice.png" alt="Ice">
+        </div>
+    </div>
+</section>
+
+<br><br><br>
+
+<footer>
+    <span>&#169;</span>2021 
+    Todos os direitos reservados
+</footer>
 
 
 

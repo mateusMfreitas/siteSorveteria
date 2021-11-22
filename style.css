@@ -1,3 +1,5 @@
+/* Corpo do html */
+
 body{
     background: rgba(166, 237, 238, 1);
     font-family: "Nunito", Helvetica, Arial, sans-serif;
@@ -5,11 +7,14 @@ body{
     background-size: cover;
 }
 
+/* Definir posição centro de todos os elementos do header */
+
 header{
     color: black;
     text-align: center;
 }
 
+/* Titúlos */
 
 #titulo{
     font-family: 'aclonica';
@@ -28,9 +33,12 @@ header{
 }
 
 
+/* Menu */
+
 li{
     display: inline;
 }
+
 #menu a{
     color: gray;
     text-decoration:none;
@@ -46,6 +54,33 @@ li{
     max-width: 20px;
 }
 
+.carrinho img{
+    margin-top: 3px;
+    max-width: 50px;
+    padding: 5px;
+    background-color: #F34698;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+/* Link whatsapp flutuante no canto esquerdo */
+
+.whatsapp-link{
+    position: fixed;
+    z-index: 200;
+    bottom: 50px;
+    float: right;
+    margin-right: 20px;
+}
+
+.whatsapp-link img{
+    width: 60px;
+    height: 60px;
+    
+}
+
+
+/* Tipos de sorvetes */
 
 .tipos{
     display: flex;
@@ -61,7 +96,6 @@ li{
     max-width: 260px;
     background-color: #F4C3DA;
     margin: 20px;
-    
 }
 
 .tipos h1{
@@ -91,6 +125,8 @@ li{
     margin-left: 20px;
 }
 
+/* Modelos de sorvetes espalhados */
+
 .modelos-sorvetes{
     display: flex;
     flex-wrap: wrap;
@@ -118,20 +154,19 @@ li{
     margin: 0 auto;
 }
 
+
 .sorvetes img{
     max-width: 300px;
     margin-top: 50px;
-}
-
-
-.carrinho img{
-    margin-top: 3px;
-    max-width: 50px;
-    padding: 5px;
-    background-color: #F34698;
-    border: 2px solid black;
     border-radius: 20px;
 }
+
+
+
+
+/* Interrogação para conhecer mais sobre o produto */
+
+
 
 .interrogacao img{
     margin-top: 3px;
@@ -142,16 +177,76 @@ li{
     border-radius: 20px;
 }
 
-#quem-somos{
+
+
+
+/* Dropdown das informações */
+
+[data-dropdown]{
+    position: relative;
+}
+
+[data-dropdown] .dropdown-menu{
+    display: none;
+}
+
+[data-dropdown]:hover .dropdown-menu{
+    display: block;
+}
+
+
+.dropdown-menu{
+    position: absolute;
+    top: 38px;
+    background-color: #F4C3DA;
+    border: 2px solid #333;
+    z-index: 200;
+}
+
+.dropdown-menu li button:hover{
+    color: #FFFFFF;
+}
+
+.dropdown-menu label{
+    font-size: 0.8em;
+}
+
+.dropdown-menu button{
+    background-color: #F34698;
+   border-radius: 5px;
+}
+
+
+/* Aba quem somos */
+
+.quem-somos-itens{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+#quem-somos-text{
     text-align: center;
     padding: 35px;
     background-color:rgba(252, 230, 240, 1);
-    margin-left: 60px;
     border-radius: 20px;
-    max-width: 40%;
-    max-height: 200;
+}
+
+.quem-somos-text p{
     font-size: 1.2em;
 }
+
+
+.quem-somos-img img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+/* Aba contato com informações */
 
 .items-contato{
     display: flex;
@@ -175,36 +270,29 @@ li{
     max-width: 60px;
 }
 
-[data-dropdown]{
-    position: relative;
+/* Opções de pagamento */
+
+.pagamento{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-right: 90px;
 }
 
-[data-dropdown] .dropdown-menu{
-    display: none;
+.pag-img{
+    max-width: 400px;
 }
 
-[data-dropdown]:hover .dropdown-menu{
-    display: block;
+.text-area{
+    background-color: rgba(252, 230, 240, 1);
+    border: 1px solid black;
+    padding: 35px;
+    border-radius: 20px;
+    font-size: 1.3em;
 }
 
-
-.dropdown-menu{
-    position: absolute;
-    top: 38px;
-    background-color: #F4C3DA;
-    border: 2px solid #333;
-    z-index: 200;
-}
-
-.dropdown-menu li a:hover{
-    color: #FFFFFF;
-}
-
-.dropdown-menu label{
-    font-size: 0.8em;
-}
-
-.dropdown-menu button{
-    background-color: #F34698;
-   border-radius: 5px;
+footer{
+    text-align: center;
 }
