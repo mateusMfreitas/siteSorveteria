@@ -1,37 +1,54 @@
+function alertar(){
+    alert("Você será redirecionado ao WhatsApp da empresa! Faça seu pedido!");
+}//alertar
 
-document.getElementById("btnConfirmar").onclick=function(){
-    let frmChk=document.getElementById('frmCheckbox').elements;
-    let sabor
-
-    for(i =0;i<frmChk.length;i++){
-        if(frmChk[i].checked){
-            console.log(frmChk[i].value)
-            if(frmChk[i].value==1){
-                sabor = "morango"
-            }else if(frmChk[i].value==2){
-                sabor = "chocolate"
-            }else{
-                sabor = "creme"
+function soma(){
+    var selecionados = document.getElementsByName('OptSorvete');
+    for (var i = 0; i < selecionados.length; i++){
+        if (selecionados[i].checked) {
+            if(selecionados[i].id == "opt-1"){
+                document.getElementById("txt").innerHTML= "Pote de Morango";
+            }else if (selecionados[i].id == "opt-2") {
+                document.getElementById("txt").innerHTML= "Pote de Chocolate";
+            }else if (selecionados[i].id == "opt-3") {
+                document.getElementById("txt").innerHTML= "Pote de Creme";
             }
-            adicionarCarrinho(sabor, 20)
-
+            else if (selecionados[i].id == "opt-4") {
+                document.getElementById("txt").innerHTML= "Picolé de Morango";
+            }
+            else if (selecionados[i].id == "opt-5") {
+                document.getElementById("txt").innerHTML= "Picolé de Limão";
+            }
+            else if (selecionados[i].id == "opt-6") {
+                document.getElementById("txt").innerHTML= "Picolé de Maracujá";
+            }
+            else if (selecionados[i].id == "opt-7") {
+                document.getElementById("txt").innerHTML= "Zero Lactose de Mirtilo";
+            }
+            else if (selecionados[i].id == "opt-8") {
+                document.getElementById("txt").innerHTML= "Zero Lactose de Maracujá";
+            }
+            else if (selecionados[i].id == "opt-9") {
+                document.getElementById("txt").innerHTML= "Zero Lactose de Amora";
+            }
+            else if (selecionados[i].id == "opt-10") {
+                document.getElementById("txt").innerHTML= "Pote Especial de Frutas Vermelhas";
+            }
+            else if (selecionados[i].id == "opt-11") {
+                document.getElementById("txt").innerHTML= "Pote Especial de Bombom";
+            }
+            else if (selecionados[i].id == "opt-12") {
+                document.getElementById("txt").innerHTML= "Picolé Especial de Uva Suíça";
+            }
+            else if (selecionados[i].id == "opt-13") {
+                document.getElementById("txt").innerHTML= "Picolé Especial de Bombom Recheado";
+            }
+            else if (selecionados[i].id == "opt-14") {
+                document.getElementById("txt").innerHTML= "Zero Lactose Especial de Napolitano";
+            }
+            else if (selecionados[i].id == "opt-15") {
+                document.getElementById("txt").innerHTML= "Zero Lactose Especial de Frutas Vermelhas em Pedaços";
+            }
         }
     }
-    return false
-}
-
-function adicionarCarrinho(produto,valor){
-    localStorage.setItem("produto", produto)
-    localStorage.setItem("valor", valor)
-    mostrarCarrinho()
-
-
-}
-function mostrarCarrinho(){
-    for(var i in localStorage) {
-       // console.log(i + ' = ' + localStorage[i]);
-        document.getElementById("textoCarrinho").innerHTML+=localStorage.getItem("produto")
-        console.log(localStorage.key(0))
-    }
-}
-
+}//soma
